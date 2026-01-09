@@ -1,0 +1,13 @@
+class Solution {
+    public int missingNumber(int[] nums) {
+        int expect=0,actual=0;
+        int n=nums.length;
+        expect=n*(n+1)/2;
+        for(int i=0; i<nums.length; i++){
+            actual +=nums[i];
+
+        }
+        return expect-actual;
+        
+    }
+}
